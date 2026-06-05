@@ -159,7 +159,7 @@ Hukum Amdahl:  Speedup = 1 / (S + P/N)
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/USERNAME/parallel-camera.git
+git clone https://github.com/kikoo-dev/parallel-camera.git
 cd parallel-camera
 
 # 2. Install dependencies
@@ -233,7 +233,7 @@ numpy>=1.24.0
 
 <div align="center">
 
-Made with ☕ by [USERNAME](https://github.com/USERNAME)
+Made with ☕ by [kikoo-dev & GRRCS](https://github.com/kikoo-dev/parallel-camera.git)
 
 *Parallel Computing · Computer Vision · Python*
 
