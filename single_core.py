@@ -1,4 +1,5 @@
 import time
+import numpy as np
 from processing import full_pipeline
 
 def process_single(frame):
@@ -10,19 +11,17 @@ def process_single(frame):
 
     # Simulasi beban: proses 4 region frame secara berurutan
     h, w = frame.shape[:2]
+    h4 = h // 4
     results = []
     for region in [
-        frame[0:h//2, 0:w//2],
-        frame[0:h//2, w//2:w],
-        frame[h//2:h, 0:w//2],
-        frame[h//2:h, w//2:w],
+        frame[0:h4, :],
+        frame[h4:2*h4, :],
+        frame[2*h4:3*h4, :],
+        frame[3*h4:h, :],
     ]:
         results.append(full_pipeline(region))
 
-    # Gabungkan 4 quadrant
-    top    = __import__('numpy').hstack([results[0], results[1]])
-    bottom = __import__('numpy').hstack([results[2], results[3]])
-    output = __import__('numpy').vstack([top, bottom])
+    output = np.vstack(results)
 
     elapsed = time.perf_counter() - start
     fps = 1.0 / elapsed if elapsed > 0 else 0
