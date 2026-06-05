@@ -2,6 +2,15 @@
 
 # 🎥 Parallel Camera
 
+### 👥 Development Team
+
+| Nama | NIM |
+|------|-----|
+| Giri Aryono Putro | 152024091 |
+| Keyko Danu Tri S. | 152024101 |
+
+---
+
 ### Real-time Parallel Computing Demo using Laptop Camera
 **Single Core vs Multi Core — Live FPS Comparison**
 
@@ -159,7 +168,7 @@ Hukum Amdahl:  Speedup = 1 / (S + P/N)
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/kikoo-dev/parallel-camera.git
+git clone https://github.com/USERNAME/parallel-camera.git
 cd parallel-camera
 
 # 2. Install dependencies
@@ -233,7 +242,7 @@ numpy>=1.24.0
 
 <div align="center">
 
-Made with ☕ by [kikoo-dev & GRRCS](https://github.com/kikoo-dev/parallel-camera.git)
+Made with ☕ by [USERNAME](https://github.com/USERNAME)
 
 *Parallel Computing · Computer Vision · Python*
 
