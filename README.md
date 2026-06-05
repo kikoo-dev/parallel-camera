@@ -39,11 +39,7 @@
 | Sequential processing | Parallel processing |
 | ~8–15 FPS | ~30–45 FPS |
 
-> *Letakkan screenshot output program di folder `assets/` lalu ganti path di bawah ini:*
-
-```
 ![Demo](assets/demo.png)
-```
 
 </div>
 
